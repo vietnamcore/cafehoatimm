@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu Hoa Tím · Coffee - Vườn Sinh Thái</title>
+  <meta name="description" content="Menu Hoa Tím - Café · Trà · Trà sữa · Sinh tố · Nước ép · Đồ chay · Lẩu" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">🌸</div>
+      <div>
+        <h1>Hoa Tím</h1>
+        <div class="subtitle">Coffee · Vườn Sinh Thái</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <input id="search" placeholder="Tìm món, ví dụ: cacao, trà..." aria-label="Tìm món">
+      <button id="adminLink" onclick="location.href='admin.html'">Admin</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Danh mục"></nav>
+
+  <main>
+    <section id="menu-grid" class="grid" aria-live="polite"></section>
+    <div id="empty" class="empty" hidden>Không tìm thấy món nào.</div>
+  </main>
+
+  <footer class="footer">
+    <div>© 2025 Hoa Tím · Coffee</div>
+    <div class="small">Mở cửa: 07:00 - 22:00 · Hotline: 0915 157 089</div>
+  </footer>
+
+  <script src="menu.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
