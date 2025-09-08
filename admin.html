@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin · Hoa Tím</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">🌸</div>
+      <div>
+        <h1>Admin - Hoa Tím</h1>
+        <div class="subtitle">Quản lý menu</div>
+      </div>
+    </div>
+    <div class="actions">
+      <button onclick="location.href='index.html'">Xem site</button>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <section class="card" style="max-width:900px;margin:18px auto;">
+      <div id="loginBox">
+        <h2>Đăng nhập</h2>
+        <input id="pw" type="password" placeholder="Mật khẩu admin">
+        <button id="btnLogin">Đăng nhập</button>
+        <div class="hint">Mật khẩu mặc định: <strong>admin123</strong> (thay trong admin.js)</div>
+      </div>
+
+      <div id="panel" hidden>
+        <div class="admin-row">
+          <button id="btnAdd">➕ Thêm món mới</button>
+          <button id="btnReset">⤺ Khôi phục menu gốc</button>
+          <button id="btnExport">📥 Xuất JSON</button>
+          <button id="btnImport">📤 Nhập JSON</button>
+          <input id="importInput" type="file" accept=".json" style="display:none;">
+        </div>
+
+        <div id="editor"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="small">Thao tác sẽ lưu ngay vào trình duyệt (localStorage).</div>
+  </footer>
+
+  <script src="menu.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
